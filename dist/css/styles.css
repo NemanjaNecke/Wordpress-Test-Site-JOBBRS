@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Proxima Nova Soft;
+    src: local('Proxima Nova Soft Regular'), local('ProximaNovaSoft-Regular'),
+        url(../blog-test-fonts/ProximaNovaSoft-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Proxima Nova Soft;
+    src: url(../blog-test-fonts/ProximaNovaSoft-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --text_color: #18324C;
+    --white: #ffffff;
+    --prox: Proxima Nova Soft;
+}
+
+html, * {
+    font-family:var(--prox);
+    font-size:18px;
+    
+}
+
+
+/* .header {
+    background-image: url('../img/hero_bg_2x\ 1.png');
+    background-size: unset;
+    height: 16.5rem;
+}  */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+    font-weight: normal;
+    
+}
+
+
+.nav-link  {
+    padding-top: 2;
+    padding-bottom: 2;
+    color:var(--text_color);
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #305172;
+}
+
+h1 {
+    letter-spacing: 0.25rem;
+}
+@media only screen and (max-width: 550px){
+
+    #menu-page-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
+
+}
+
+.page-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.post-title {
+    font-size: 2rem;
+}
+
+.hover:hover{
+    border-bottom: 3px solid rgba(30, 115, 177, 1);
+}
